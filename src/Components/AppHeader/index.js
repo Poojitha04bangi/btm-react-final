@@ -1,6 +1,7 @@
 import { BellFilled, MailOutlined } from "@ant-design/icons";
 import { Badge, Drawer, Image, List, Space, Typography } from "antd";
 import { useEffect, useState } from "react";
+import btm from "./btm.jpeg";
 // import { getComments, getOrders } from "../../API";
 
 // Import your local image
@@ -24,30 +25,26 @@ function AppHeader() {
   return (
     <div className="AppHeader">
       {/* Use the imported image */}
-      <Image
-        width={1}
-        // src={Link} // Use the imported image
-        alt=""
-      /> 
+      <img src={btm} alt="" width={50} height={50} margin-right={80}/>
       <Typography.Title>BTM</Typography.Title>
       {/* <Space> */}
       <Space direction="horizontal">
-        <Badge count={comments.length} dot>
+        {/* <Badge count={comments.length} dot>
           <MailOutlined
             style={{ fontSize: 24 }}
             onClick={() => {
               setCommentsOpen(true);
             }}
           />
-        </Badge>
-        <Badge count={orders.length}>
+        </Badge> */}
+        {/* <Badge count={orders.length}>
           <BellFilled
             style={{ fontSize: 24 }}
             onClick={() => {
               setNotificationsOpen(true);
             }}
           />
-        </Badge>
+        </Badge> */}
       </Space>
       <Drawer
         title="Comments"

@@ -46,7 +46,9 @@
 .sidebar ul ul a {
   padding: 5px 0;
 } */
-
+p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 .App{
   display: flex;
@@ -57,7 +59,7 @@
 .AppHeader{
   height: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 4px 20px 4px 12px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
